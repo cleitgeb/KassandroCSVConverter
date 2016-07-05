@@ -9,6 +9,15 @@ public class DailyTurnover {
     double amount;
     double vatLow;
     double vatNormal;
+    double nettoAmount;
+
+    public double getNettoAmount() {
+        return nettoAmount;
+    }
+
+    public void setNettoAmount(double nettoAmount) {
+        this.nettoAmount = this.nettoAmount + nettoAmount;
+    }
 
     public int getDate() {
         return date;
